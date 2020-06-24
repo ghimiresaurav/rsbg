@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>        
+        body{
+            background-color: gray;
+        }
+        table{
+            border-collapse: collapse;
+            width: 60%;
+            text-align: center; 
+            border: 2px solid;  
+            margin: auto;          
+        }   
+        thead, tfoot{
+            background-color: rgb(77, 183, 245);
+            font-size: 25px;            
+            line-height: 35px;   
+            font-weight: bold;      
+        }
+        tr img{
+            height: 80px;
+        }
+        td{
+            border: 1px solid;
+        }  
+        tbody{
+            font-size: 22px;
+        }
+        tr:nth-child(even){
+            background-color: rgb(36, 221, 212);
+        }
+        tbody tr:nth-child(odd){
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center">Shopping Bill</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Fruits</td>
+                <td>Rate</td>
+                <td>Quantity</td>
+                <td>Total</td>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><strong>G.Total</strong></td>
+                <td><strong>-</strong></td>
+                <td><strong>-</strong></td>
+                <td id="tot"></td>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="sc.js"></script>
+</body>
+</html>
